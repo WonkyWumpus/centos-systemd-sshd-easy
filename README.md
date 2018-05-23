@@ -4,6 +4,8 @@
 
 This project eases the deployment of centos 7 containers running systemd and sshd that can then be used much like fully-functional virtual machines.  The automation of key generation and distribution and some changes to dns resolution and ssh behavior allows users image to focus on high-level activities, instead of stuggling with dns and networking issues inside their cluster.  The dockerfiles here also avoid the bad practice of hard-coding passwords into your sshd containers.
 
+While the whole premise of this project runs somewhat counter to the ethos of containers (one process/purpose per container), this approach has proven a great time saver for development and testing of software and configuations that just aren't fully cloud-native/container-friendly yet.
+
 The development and testing of this project has been on a VirtualBox-based minikube Kubernetes cluster hosted on OSX. Portions of the project will be useful in other container orchestration environments, but modifications will be required.
 
 This project takes advantage of the Kubernetes dns service to create entries that will allow us to address our containers via hostnames instead of the explicit service definitions that are expected from microservice based applications.  The key is creating a headless service and attaching to pods via the subdomain attribute in pods. The [DNS Pods and Services](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/) section of the Kubernetes documentation explains the requirements:
