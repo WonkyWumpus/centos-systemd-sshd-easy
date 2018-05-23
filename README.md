@@ -26,6 +26,7 @@ The dockerfile for the Ubuntu images performs several steps at startup
 
 It is important to note that your pods must define their subdomain as easy and they must mount the key pair secret into /root/.secret-easy-keys.  Sample .yaml files are provided.
 
+The centos and systemd enablement is based on the instructions available in the readme at https://hub.docker.com/_/centos/
 
 ## Instructions
 
