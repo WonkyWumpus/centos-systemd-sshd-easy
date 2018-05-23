@@ -31,8 +31,6 @@ RUN yum -y install openssh openssh-server openssh-clients openssl-libs; systemct
 
 ADD easy-network.service /etc/systemd/system/easy-network.service
 ADD easy-network-config.sh /root/easy-network-config.sh
-RUN chmod 755 /root/easy-network-config.sh
-
-RUN systemctl enable easy-network.service
+RUN chmod 755 /root/easy-network-config.sh; systemctl enable easy-network.service
 
 CMD ["/usr/sbin/init"]

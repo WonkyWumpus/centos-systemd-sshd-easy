@@ -1,3 +1,6 @@
+[Install]
+WantedBy=multi-user.target
+
 [Unit]
 Description=Load of easy network keys
 Before=sshd.service
@@ -7,4 +10,3 @@ Type=oneshot
 User=root
 WorkingDirectory=/root
 ExecStart=/root/easy-network-config.sh
-Restart=

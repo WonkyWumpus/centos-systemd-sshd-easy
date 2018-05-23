@@ -9,8 +9,8 @@ spec:
   hostname: m01 
   subdomain: easy 
   containers:
-      - name: mdb-easy-centos-base 
-        image: wonkywumpus/mdb-easy-centos-base:0.10 
+      - name: centos-systemd-sshd-easy
+        image: wonkywumpus/centos-systemd-sshd-easy:0.10
         securityContext:
           privileged: true
         ports:
@@ -35,8 +35,8 @@ spec:
   hostname: m02 
   subdomain: easy 
   containers:
-      - name: mdb-easy-centos-base 
-        image: wonkywumpus/mdb-easy-centos-base:0.10 
+      - name: centos-systemd-sshd-easy
+        image: wonkywumpus/centos-systemd-sshd-easy:0.10
         securityContext:
           privileged: true
         ports:
@@ -61,8 +61,8 @@ spec:
   hostname: m03 
   subdomain: easy 
   containers:
-      - name: mdb-easy-centos-base 
-        image: wonkywumpus/mdb-easy-centos-base:0.10 
+      - name: centos-systemd-sshd-easy
+        image: wonkywumpus/centos-systemd-sshd-easy:0.10
         securityContext:
           privileged: true
         ports:
@@ -87,8 +87,8 @@ spec:
   hostname: m04 
   subdomain: easy 
   containers:
-      - name: mdb-easy-centos-base 
-        image: wonkywumpus/mdb-easy-centos-base:0.10 
+      - name: centos-systemd-sshd-easy
+        image: wonkywumpus/centos-systemd-sshd-easy:0.10
         securityContext:
           privileged: true
         ports:
@@ -113,8 +113,8 @@ spec:
   hostname: m05 
   subdomain: easy 
   containers:
-      - name: mdb-easy-centos-base 
-        image: wonkywumpus/mdb-easy-centos-base:0.10 
+      - name: centos-systemd-sshd-easy
+        image: wonkywumpus/centos-systemd-sshd-easy:0.10
         securityContext:
           privileged: true
         ports:
