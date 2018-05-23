@@ -18,7 +18,7 @@ The general flow to create your containers
 2. Store key pair in minikube VM and on hostmachine
 3. Create Kubernetes Secret named `easy-keys` containing key pair
 4. Create Kubernetes headless service name `easy`
-5. Create Ubuntu 16.04 single container Kubernets Pod(s)
+5. Create centos 7 single container Kubernets Pod(s)
 
 The dockerfile for the Ubuntu images performs several steps at startup
 
